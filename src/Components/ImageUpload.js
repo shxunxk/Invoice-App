@@ -1,10 +1,16 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import './ImageUpload.css';
 
 const ImageUpload = ({ onImageUpload, loading, error }) => {
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [previewUrl, setPreviewUrl] = useState(null);
   const [isDragging, setIsDragging] = useState(false);
   const [localError, setLocalError] = useState('');
+
+  useEffect(() => {
+    return () => {
+      if (previewUrl) URL.revokeObjectURL(previewUrl);
+    };
+  }, [previewUrl]);
 
   const handleDragOver = useCallback((e) => {
     e.preventDefault();
@@ -22,42 +28,32 @@ const ImageUpload = ({ onImageUpload, loading, error }) => {
     setLocalError('');
     
     const file = e.dataTransfer.files[0];
-    if (file && file.type.startsWith('image/')) {
-      handleImageUpload(file);
-    } else {
-      setLocalError('Please upload a valid image file (JPG, PNG, or GIF)');
-    }
+    validateAndHandleFile(file);
   }, []);
 
   const handleFileInput = useCallback((e) => {
     const file = e.target.files[0];
-    if (file) {
-      if (file.type.startsWith('image/')) {
-        handleImageUpload(file);
-        setLocalError('');
-      } else {
-        setLocalError('Please upload a valid image file (JPG, PNG, or GIF)');
-      }
-    }
+    validateAndHandleFile(file);
   }, []);
 
-  const handleImageUpload = (file) => {
-    if (file.size > 5 * 1024 * 1024) { // 5MB limit
+  const validateAndHandleFile = (file) => {
+    if (!file) return;
+
+    if (!file.type.startsWith('image/')) {
+      setLocalError('Please upload a valid image file (JPG, PNG, or GIF)');
+      return;
+    }
+
+    if (file.size > 5 * 1024 * 1024) {
       setLocalError('File size should be less than 5MB');
       return;
     }
 
-    const reader = new FileReader();
-    reader.onload = (e) => {
-      setSelectedImage(e.target.result);
-      if (onImageUpload) {
-        onImageUpload(e.target.result);
-      }
-    };
-    reader.onerror = () => {
-      setLocalError('Error reading the file');
-    };
-    reader.readAsDataURL(file);
+    setPreviewUrl(URL.createObjectURL(file));
+    
+    if (onImageUpload) {
+      onImageUpload(file);
+    }
   };
 
   return (
@@ -74,14 +70,15 @@ const ImageUpload = ({ onImageUpload, loading, error }) => {
             <div className="spinner"></div>
             <p>Processing image...</p>
           </div>
-        ) : selectedImage ? (
+        ) : previewUrl ? (
           <div className="image-preview">
-            <img src={selectedImage} alt="Preview" />
+            <img src={previewUrl} alt="Preview" />
             <div className="preview-actions">
               <button 
                 className="remove-image"
                 onClick={() => {
-                  setSelectedImage(null);
+                  URL.revokeObjectURL(previewUrl);
+                  setPreviewUrl(null);
                   setLocalError('');
                 }}
                 disabled={loading}
@@ -117,4 +114,4 @@ const ImageUpload = ({ onImageUpload, loading, error }) => {
   );
 };
 
-export default ImageUpload; 
+export default ImageUpload;

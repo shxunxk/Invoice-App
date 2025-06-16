@@ -1,0 +1,1331 @@
+{
+    "summary": [
+        {
+            "label": "Billing Address",
+            "value": {
+                "address_complement": null,
+                "city": null,
+                "confidence": 0,
+                "country": null,
+                "page_id": null,
+                "po_box": null,
+                "polygon": [],
+                "postal_code": null,
+                "state": null,
+                "street_name": null,
+                "street_number": null,
+                "value": null
+            }
+        },
+        {
+            "label": "Category",
+            "value": "miscellaneous"
+        },
+        {
+            "label": "Customer Address",
+            "value": "123 Anywhere St.,, Any City"
+        },
+        {
+            "label": "Customer Company Registrations",
+            "value": []
+        },
+        {
+            "label": "Customer Id",
+            "value": "0123 4567 8901"
+        },
+        {
+            "label": "Customer Name",
+            "value": "RICHARD SANCHEZ THYNK UNLIMITED"
+        },
+        {
+            "label": "Date",
+            "value": "2030-11-02"
+        },
+        {
+            "label": "Document Type",
+            "value": "INVOICE"
+        },
+        {
+            "label": "Document Type Extended",
+            "value": "INVOICE"
+        },
+        {
+            "label": "Due Date",
+            "value": "2030-11-03"
+        },
+        {
+            "label": "Invoice Number",
+            "value": "01234"
+        },
+        {
+            "label": "Locale",
+            "value": {
+                "confidence": 0.88,
+                "country": null,
+                "currency": "USD",
+                "language": "en",
+                "value": null
+            }
+        },
+        {
+            "label": "Payment Date",
+            "value": "2030-11-03"
+        },
+        {
+            "label": "Po Number",
+            "value": {
+                "confidence": 0,
+                "page_id": null,
+                "polygon": [],
+                "value": null
+            }
+        },
+        {
+            "label": "Reference Numbers",
+            "value": []
+        },
+        {
+            "label": "Shipping Address",
+            "value": {
+                "address_complement": null,
+                "city": null,
+                "confidence": 0,
+                "country": null,
+                "page_id": null,
+                "po_box": null,
+                "polygon": [],
+                "postal_code": null,
+                "state": null,
+                "street_name": null,
+                "street_number": null,
+                "value": null
+            }
+        },
+        {
+            "label": "Subcategory",
+            "value": {
+                "confidence": 0.86,
+                "value": null
+            }
+        },
+        {
+            "label": "Supplier Address",
+            "value": {
+                "address_complement": null,
+                "city": null,
+                "confidence": 0,
+                "country": null,
+                "page_id": null,
+                "po_box": null,
+                "polygon": [],
+                "postal_code": null,
+                "state": null,
+                "street_name": null,
+                "street_number": null,
+                "value": null
+            }
+        },
+        {
+            "label": "Supplier Company Registrations",
+            "value": []
+        },
+        {
+            "label": "Supplier Email",
+            "value": {
+                "confidence": 0,
+                "page_id": null,
+                "polygon": [],
+                "value": null
+            }
+        },
+        {
+            "label": "Supplier Name",
+            "value": "BORCELE BANK"
+        },
+        {
+            "label": "Supplier Payment Details",
+            "value": []
+        },
+        {
+            "label": "Supplier Phone Number",
+            "value": {
+                "confidence": 0,
+                "page_id": null,
+                "polygon": [],
+                "value": null
+            }
+        },
+        {
+            "label": "Supplier Website",
+            "value": {
+                "confidence": 0,
+                "page_id": null,
+                "polygon": [],
+                "value": null
+            }
+        },
+        {
+            "label": "Taxes",
+            "value": []
+        },
+        {
+            "label": "Total Amount",
+            "value": 440
+        },
+        {
+            "label": "Total Net",
+            "value": 400
+        },
+        {
+            "label": "Total Tax",
+            "value": {
+                "confidence": 0,
+                "page_id": 0,
+                "polygon": [],
+                "value": null
+            }
+        }
+    ],
+    "table": [
+        {
+            "description": "Brand consultation",
+            "quantity": 1,
+            "total_amount": 100,
+            "unit_price": 100
+        },
+        {
+            "description": "logo design",
+            "quantity": 1,
+            "total_amount": 100,
+            "unit_price": 100
+        },
+        {
+            "description": "Website design",
+            "quantity": 1,
+            "total_amount": 100,
+            "unit_price": 100
+        },
+        {
+            "description": "Social m edia templates",
+            "quantity": 1,
+            "total_amount": 100,
+            "unit_price": 100
+        },
+        {
+            "description": "Brand photography",
+            "quantity": 1,
+            "total_amount": 100,
+            "unit_price": 100
+        },
+        {
+            "description": "Brand guide",
+            "quantity": 1,
+            "total_amount": 100,
+            "unit_price": 100
+        }
+    ],
+    "header": [
+        "description",
+        "quantity",
+        "total_amount",
+        "unit_price"
+    ]
+}
+
+{
+    "api_request": {
+        "error": {},
+        "resources": [
+            "document"
+        ],
+        "status": "success",
+        "status_code": 201,
+        "url": "https://api.mindee.net/v1/products/mindee/invoices/v4/predict"
+    },
+    "document": {
+        "id": "03c4bcf6-4ae9-433b-85f1-e5355cf257c1",
+        "inference": {
+            "extras": {},
+            "finished_at": "2025-06-16T09:26:36.334621",
+            "is_rotation_applied": true,
+            "pages": [
+                {
+                    "extras": {},
+                    "id": 0,
+                    "orientation": {
+                        "value": 0
+                    },
+                    "prediction": {
+                        "billing_address": {
+                            "address_complement": null,
+                            "city": null,
+                            "confidence": 0,
+                            "country": null,
+                            "po_box": null,
+                            "polygon": [],
+                            "postal_code": null,
+                            "state": null,
+                            "street_name": null,
+                            "street_number": null,
+                            "value": null
+                        },
+                        "category": {
+                            "confidence": 0.86,
+                            "value": "miscellaneous"
+                        },
+                        "customer_address": {
+                            "address_complement": null,
+                            "city": null,
+                            "confidence": 0.99,
+                            "country": null,
+                            "po_box": null,
+                            "polygon": [
+                                [
+                                    0.129,
+                                    0.38
+                                ],
+                                [
+                                    0.386,
+                                    0.38
+                                ],
+                                [
+                                    0.386,
+                                    0.397
+                                ],
+                                [
+                                    0.129,
+                                    0.397
+                                ]
+                            ],
+                            "postal_code": null,
+                            "state": null,
+                            "street_name": "Anywhere St",
+                            "street_number": "123",
+                            "value": "123 Anywhere St.,, Any City"
+                        },
+                        "customer_company_registrations": [],
+                        "customer_id": {
+                            "confidence": 0.99,
+                            "polygon": [
+                                [
+                                    0.256,
+                                    0.462
+                                ],
+                                [
+                                    0.404,
+                                    0.462
+                                ],
+                                [
+                                    0.404,
+                                    0.477
+                                ],
+                                [
+                                    0.256,
+                                    0.477
+                                ]
+                            ],
+                            "value": "0123 4567 8901"
+                        },
+                        "customer_name": {
+                            "confidence": 0.99,
+                            "polygon": [
+                                [
+                                    0.127,
+                                    0.349
+                                ],
+                                [
+                                    0.287,
+                                    0.349
+                                ],
+                                [
+                                    0.287,
+                                    0.38
+                                ],
+                                [
+                                    0.127,
+                                    0.38
+                                ]
+                            ],
+                            "raw_value": "Richard Sanchez Thynk Unlimited",
+                            "value": "RICHARD SANCHEZ THYNK UNLIMITED"
+                        },
+                        "date": {
+                            "confidence": 0.96,
+                            "polygon": [
+                                [
+                                    0.767,
+                                    0.348
+                                ],
+                                [
+                                    0.873,
+                                    0.348
+                                ],
+                                [
+                                    0.873,
+                                    0.362
+                                ],
+                                [
+                                    0.767,
+                                    0.362
+                                ]
+                            ],
+                            "value": "2030-11-02"
+                        },
+                        "document_type": {
+                            "value": "INVOICE"
+                        },
+                        "document_type_extended": {
+                            "confidence": 1,
+                            "value": "INVOICE"
+                        },
+                        "due_date": {
+                            "confidence": 0.9,
+                            "is_computed": false,
+                            "polygon": [
+                                [
+                                    0.767,
+                                    0.366
+                                ],
+                                [
+                                    0.873,
+                                    0.366
+                                ],
+                                [
+                                    0.873,
+                                    0.38
+                                ],
+                                [
+                                    0.767,
+                                    0.38
+                                ]
+                            ],
+                            "value": "2030-11-03"
+                        },
+                        "invoice_number": {
+                            "confidence": 0.99,
+                            "polygon": [
+                                [
+                                    0.815,
+                                    0.329
+                                ],
+                                [
+                                    0.874,
+                                    0.329
+                                ],
+                                [
+                                    0.874,
+                                    0.344
+                                ],
+                                [
+                                    0.815,
+                                    0.344
+                                ]
+                            ],
+                            "value": "01234"
+                        },
+                        "line_items": [
+                            {
+                                "confidence": 0.99,
+                                "description": "Brand consultation",
+                                "polygon": [
+                                    [
+                                        0.135,
+                                        0.58
+                                    ],
+                                    [
+                                        0.866,
+                                        0.58
+                                    ],
+                                    [
+                                        0.866,
+                                        0.603
+                                    ],
+                                    [
+                                        0.135,
+                                        0.603
+                                    ]
+                                ],
+                                "product_code": null,
+                                "quantity": 1,
+                                "tax_amount": null,
+                                "tax_rate": null,
+                                "total_amount": 100,
+                                "unit_measure": null,
+                                "unit_price": 100
+                            },
+                            {
+                                "confidence": 0.99,
+                                "description": "logo design",
+                                "polygon": [
+                                    [
+                                        0.134,
+                                        0.611
+                                    ],
+                                    [
+                                        0.865,
+                                        0.611
+                                    ],
+                                    [
+                                        0.865,
+                                        0.631
+                                    ],
+                                    [
+                                        0.134,
+                                        0.631
+                                    ]
+                                ],
+                                "product_code": null,
+                                "quantity": 1,
+                                "tax_amount": null,
+                                "tax_rate": null,
+                                "total_amount": 100,
+                                "unit_measure": null,
+                                "unit_price": 100
+                            },
+                            {
+                                "confidence": 0.99,
+                                "description": "Website design",
+                                "polygon": [
+                                    [
+                                        0.133,
+                                        0.641
+                                    ],
+                                    [
+                                        0.865,
+                                        0.641
+                                    ],
+                                    [
+                                        0.865,
+                                        0.662
+                                    ],
+                                    [
+                                        0.133,
+                                        0.662
+                                    ]
+                                ],
+                                "product_code": null,
+                                "quantity": 1,
+                                "tax_amount": null,
+                                "tax_rate": null,
+                                "total_amount": 100,
+                                "unit_measure": null,
+                                "unit_price": 100
+                            },
+                            {
+                                "confidence": 0.99,
+                                "description": "Social m edia templates",
+                                "polygon": [
+                                    [
+                                        0.134,
+                                        0.671
+                                    ],
+                                    [
+                                        0.866,
+                                        0.671
+                                    ],
+                                    [
+                                        0.866,
+                                        0.692
+                                    ],
+                                    [
+                                        0.134,
+                                        0.692
+                                    ]
+                                ],
+                                "product_code": null,
+                                "quantity": 1,
+                                "tax_amount": null,
+                                "tax_rate": null,
+                                "total_amount": 100,
+                                "unit_measure": null,
+                                "unit_price": 100
+                            },
+                            {
+                                "confidence": 0.99,
+                                "description": "Brand photography",
+                                "polygon": [
+                                    [
+                                        0.135,
+                                        0.699
+                                    ],
+                                    [
+                                        0.865,
+                                        0.699
+                                    ],
+                                    [
+                                        0.865,
+                                        0.719
+                                    ],
+                                    [
+                                        0.135,
+                                        0.719
+                                    ]
+                                ],
+                                "product_code": null,
+                                "quantity": 1,
+                                "tax_amount": null,
+                                "tax_rate": null,
+                                "total_amount": 100,
+                                "unit_measure": null,
+                                "unit_price": 100
+                            },
+                            {
+                                "confidence": 0.99,
+                                "description": "Brand guide",
+                                "polygon": [
+                                    [
+                                        0.135,
+                                        0.729
+                                    ],
+                                    [
+                                        0.866,
+                                        0.729
+                                    ],
+                                    [
+                                        0.866,
+                                        0.75
+                                    ],
+                                    [
+                                        0.135,
+                                        0.75
+                                    ]
+                                ],
+                                "product_code": null,
+                                "quantity": 1,
+                                "tax_amount": null,
+                                "tax_rate": null,
+                                "total_amount": 100,
+                                "unit_measure": null,
+                                "unit_price": 100
+                            }
+                        ],
+                        "locale": {
+                            "confidence": 0.88,
+                            "country": null,
+                            "currency": "USD",
+                            "language": "en",
+                            "value": null
+                        },
+                        "orientation": {
+                            "confidence": 0.99,
+                            "degrees": 0
+                        },
+                        "payment_date": {
+                            "confidence": 0.9,
+                            "polygon": [
+                                [
+                                    0.767,
+                                    0.366
+                                ],
+                                [
+                                    0.873,
+                                    0.366
+                                ],
+                                [
+                                    0.873,
+                                    0.38
+                                ],
+                                [
+                                    0.767,
+                                    0.38
+                                ]
+                            ],
+                            "value": "2030-11-03"
+                        },
+                        "po_number": {
+                            "confidence": 0,
+                            "polygon": [],
+                            "value": null
+                        },
+                        "reference_numbers": [],
+                        "shipping_address": {
+                            "address_complement": null,
+                            "city": null,
+                            "confidence": 0,
+                            "country": null,
+                            "po_box": null,
+                            "polygon": [],
+                            "postal_code": null,
+                            "state": null,
+                            "street_name": null,
+                            "street_number": null,
+                            "value": null
+                        },
+                        "subcategory": {
+                            "confidence": 0.86,
+                            "value": null
+                        },
+                        "supplier_address": {
+                            "address_complement": null,
+                            "city": null,
+                            "confidence": 0,
+                            "country": null,
+                            "po_box": null,
+                            "polygon": [],
+                            "postal_code": null,
+                            "state": null,
+                            "street_name": null,
+                            "street_number": null,
+                            "value": null
+                        },
+                        "supplier_company_registrations": [],
+                        "supplier_email": {
+                            "confidence": 0,
+                            "polygon": [],
+                            "value": null
+                        },
+                        "supplier_name": {
+                            "confidence": 0.85,
+                            "polygon": [
+                                [
+                                    0.128,
+                                    0.43
+                                ],
+                                [
+                                    0.256,
+                                    0.43
+                                ],
+                                [
+                                    0.256,
+                                    0.444
+                                ],
+                                [
+                                    0.128,
+                                    0.444
+                                ]
+                            ],
+                            "raw_value": "Borcele Bank",
+                            "value": "BORCELE BANK"
+                        },
+                        "supplier_payment_details": [],
+                        "supplier_phone_number": {
+                            "confidence": 0,
+                            "polygon": [],
+                            "value": null
+                        },
+                        "supplier_website": {
+                            "confidence": 0,
+                            "polygon": [],
+                            "value": null
+                        },
+                        "taxes": [],
+                        "total_amount": {
+                            "confidence": 0.99,
+                            "polygon": [
+                                [
+                                    0.815,
+                                    0.814
+                                ],
+                                [
+                                    0.867,
+                                    0.814
+                                ],
+                                [
+                                    0.867,
+                                    0.833
+                                ],
+                                [
+                                    0.815,
+                                    0.833
+                                ]
+                            ],
+                            "value": 440
+                        },
+                        "total_net": {
+                            "confidence": 0.99,
+                            "polygon": [
+                                [
+                                    0.815,
+                                    0.778
+                                ],
+                                [
+                                    0.867,
+                                    0.778
+                                ],
+                                [
+                                    0.867,
+                                    0.798
+                                ],
+                                [
+                                    0.815,
+                                    0.798
+                                ]
+                            ],
+                            "value": 400
+                        },
+                        "total_tax": {
+                            "confidence": 0,
+                            "polygon": [],
+                            "value": null
+                        }
+                    }
+                }
+            ],
+            "prediction": {
+                "billing_address": {
+                    "address_complement": null,
+                    "city": null,
+                    "confidence": 0,
+                    "country": null,
+                    "page_id": null,
+                    "po_box": null,
+                    "polygon": [],
+                    "postal_code": null,
+                    "state": null,
+                    "street_name": null,
+                    "street_number": null,
+                    "value": null
+                },
+                "category": {
+                    "confidence": 0.86,
+                    "value": "miscellaneous"
+                },
+                "customer_address": {
+                    "address_complement": null,
+                    "city": null,
+                    "confidence": 0.99,
+                    "country": null,
+                    "page_id": 0,
+                    "po_box": null,
+                    "polygon": [
+                        [
+                            0.129,
+                            0.38
+                        ],
+                        [
+                            0.386,
+                            0.38
+                        ],
+                        [
+                            0.386,
+                            0.397
+                        ],
+                        [
+                            0.129,
+                            0.397
+                        ]
+                    ],
+                    "postal_code": null,
+                    "state": null,
+                    "street_name": "Anywhere St",
+                    "street_number": "123",
+                    "value": "123 Anywhere St.,, Any City"
+                },
+                "customer_company_registrations": [],
+                "customer_id": {
+                    "confidence": 0.99,
+                    "page_id": 0,
+                    "polygon": [
+                        [
+                            0.256,
+                            0.462
+                        ],
+                        [
+                            0.404,
+                            0.462
+                        ],
+                        [
+                            0.404,
+                            0.477
+                        ],
+                        [
+                            0.256,
+                            0.477
+                        ]
+                    ],
+                    "value": "0123 4567 8901"
+                },
+                "customer_name": {
+                    "confidence": 0.99,
+                    "page_id": 0,
+                    "polygon": [
+                        [
+                            0.127,
+                            0.349
+                        ],
+                        [
+                            0.287,
+                            0.349
+                        ],
+                        [
+                            0.287,
+                            0.38
+                        ],
+                        [
+                            0.127,
+                            0.38
+                        ]
+                    ],
+                    "raw_value": "Richard Sanchez Thynk Unlimited",
+                    "value": "RICHARD SANCHEZ THYNK UNLIMITED"
+                },
+                "date": {
+                    "confidence": 0.96,
+                    "page_id": 0,
+                    "polygon": [
+                        [
+                            0.767,
+                            0.348
+                        ],
+                        [
+                            0.873,
+                            0.348
+                        ],
+                        [
+                            0.873,
+                            0.362
+                        ],
+                        [
+                            0.767,
+                            0.362
+                        ]
+                    ],
+                    "value": "2030-11-02"
+                },
+                "document_type": {
+                    "value": "INVOICE"
+                },
+                "document_type_extended": {
+                    "confidence": 1,
+                    "value": "INVOICE"
+                },
+                "due_date": {
+                    "confidence": 0.9,
+                    "is_computed": false,
+                    "page_id": 0,
+                    "polygon": [
+                        [
+                            0.767,
+                            0.366
+                        ],
+                        [
+                            0.873,
+                            0.366
+                        ],
+                        [
+                            0.873,
+                            0.38
+                        ],
+                        [
+                            0.767,
+                            0.38
+                        ]
+                    ],
+                    "value": "2030-11-03"
+                },
+                "invoice_number": {
+                    "confidence": 0.99,
+                    "page_id": 0,
+                    "polygon": [
+                        [
+                            0.815,
+                            0.329
+                        ],
+                        [
+                            0.874,
+                            0.329
+                        ],
+                        [
+                            0.874,
+                            0.344
+                        ],
+                        [
+                            0.815,
+                            0.344
+                        ]
+                    ],
+                    "value": "01234"
+                },
+                "line_items": [
+                    {
+                        "confidence": 0.99,
+                        "description": "Brand consultation",
+                        "page_id": 0,
+                        "polygon": [
+                            [
+                                0.135,
+                                0.58
+                            ],
+                            [
+                                0.866,
+                                0.58
+                            ],
+                            [
+                                0.866,
+                                0.603
+                            ],
+                            [
+                                0.135,
+                                0.603
+                            ]
+                        ],
+                        "product_code": null,
+                        "quantity": 1,
+                        "tax_amount": null,
+                        "tax_rate": null,
+                        "total_amount": 100,
+                        "unit_measure": null,
+                        "unit_price": 100
+                    },
+                    {
+                        "confidence": 0.99,
+                        "description": "logo design",
+                        "page_id": 0,
+                        "polygon": [
+                            [
+                                0.134,
+                                0.611
+                            ],
+                            [
+                                0.865,
+                                0.611
+                            ],
+                            [
+                                0.865,
+                                0.631
+                            ],
+                            [
+                                0.134,
+                                0.631
+                            ]
+                        ],
+                        "product_code": null,
+                        "quantity": 1,
+                        "tax_amount": null,
+                        "tax_rate": null,
+                        "total_amount": 100,
+                        "unit_measure": null,
+                        "unit_price": 100
+                    },
+                    {
+                        "confidence": 0.99,
+                        "description": "Website design",
+                        "page_id": 0,
+                        "polygon": [
+                            [
+                                0.133,
+                                0.641
+                            ],
+                            [
+                                0.865,
+                                0.641
+                            ],
+                            [
+                                0.865,
+                                0.662
+                            ],
+                            [
+                                0.133,
+                                0.662
+                            ]
+                        ],
+                        "product_code": null,
+                        "quantity": 1,
+                        "tax_amount": null,
+                        "tax_rate": null,
+                        "total_amount": 100,
+                        "unit_measure": null,
+                        "unit_price": 100
+                    },
+                    {
+                        "confidence": 0.99,
+                        "description": "Social m edia templates",
+                        "page_id": 0,
+                        "polygon": [
+                            [
+                                0.134,
+                                0.671
+                            ],
+                            [
+                                0.866,
+                                0.671
+                            ],
+                            [
+                                0.866,
+                                0.692
+                            ],
+                            [
+                                0.134,
+                                0.692
+                            ]
+                        ],
+                        "product_code": null,
+                        "quantity": 1,
+                        "tax_amount": null,
+                        "tax_rate": null,
+                        "total_amount": 100,
+                        "unit_measure": null,
+                        "unit_price": 100
+                    },
+                    {
+                        "confidence": 0.99,
+                        "description": "Brand photography",
+                        "page_id": 0,
+                        "polygon": [
+                            [
+                                0.135,
+                                0.699
+                            ],
+                            [
+                                0.865,
+                                0.699
+                            ],
+                            [
+                                0.865,
+                                0.719
+                            ],
+                            [
+                                0.135,
+                                0.719
+                            ]
+                        ],
+                        "product_code": null,
+                        "quantity": 1,
+                        "tax_amount": null,
+                        "tax_rate": null,
+                        "total_amount": 100,
+                        "unit_measure": null,
+                        "unit_price": 100
+                    },
+                    {
+                        "confidence": 0.99,
+                        "description": "Brand guide",
+                        "page_id": 0,
+                        "polygon": [
+                            [
+                                0.135,
+                                0.729
+                            ],
+                            [
+                                0.866,
+                                0.729
+                            ],
+                            [
+                                0.866,
+                                0.75
+                            ],
+                            [
+                                0.135,
+                                0.75
+                            ]
+                        ],
+                        "product_code": null,
+                        "quantity": 1,
+                        "tax_amount": null,
+                        "tax_rate": null,
+                        "total_amount": 100,
+                        "unit_measure": null,
+                        "unit_price": 100
+                    }
+                ],
+                "locale": {
+                    "confidence": 0.88,
+                    "country": null,
+                    "currency": "USD",
+                    "language": "en",
+                    "value": null
+                },
+                "payment_date": {
+                    "confidence": 0.9,
+                    "page_id": 0,
+                    "polygon": [
+                        [
+                            0.767,
+                            0.366
+                        ],
+                        [
+                            0.873,
+                            0.366
+                        ],
+                        [
+                            0.873,
+                            0.38
+                        ],
+                        [
+                            0.767,
+                            0.38
+                        ]
+                    ],
+                    "value": "2030-11-03"
+                },
+                "po_number": {
+                    "confidence": 0,
+                    "page_id": null,
+                    "polygon": [],
+                    "value": null
+                },
+                "reference_numbers": [],
+                "shipping_address": {
+                    "address_complement": null,
+                    "city": null,
+                    "confidence": 0,
+                    "country": null,
+                    "page_id": null,
+                    "po_box": null,
+                    "polygon": [],
+                    "postal_code": null,
+                    "state": null,
+                    "street_name": null,
+                    "street_number": null,
+                    "value": null
+                },
+                "subcategory": {
+                    "confidence": 0.86,
+                    "value": null
+                },
+                "supplier_address": {
+                    "address_complement": null,
+                    "city": null,
+                    "confidence": 0,
+                    "country": null,
+                    "page_id": null,
+                    "po_box": null,
+                    "polygon": [],
+                    "postal_code": null,
+                    "state": null,
+                    "street_name": null,
+                    "street_number": null,
+                    "value": null
+                },
+                "supplier_company_registrations": [],
+                "supplier_email": {
+                    "confidence": 0,
+                    "page_id": null,
+                    "polygon": [],
+                    "value": null
+                },
+                "supplier_name": {
+                    "confidence": 0.85,
+                    "page_id": 0,
+                    "polygon": [
+                        [
+                            0.128,
+                            0.43
+                        ],
+                        [
+                            0.256,
+                            0.43
+                        ],
+                        [
+                            0.256,
+                            0.444
+                        ],
+                        [
+                            0.128,
+                            0.444
+                        ]
+                    ],
+                    "raw_value": "Borcele Bank",
+                    "value": "BORCELE BANK"
+                },
+                "supplier_payment_details": [],
+                "supplier_phone_number": {
+                    "confidence": 0,
+                    "page_id": null,
+                    "polygon": [],
+                    "value": null
+                },
+                "supplier_website": {
+                    "confidence": 0,
+                    "page_id": null,
+                    "polygon": [],
+                    "value": null
+                },
+                "taxes": [],
+                "total_amount": {
+                    "confidence": 0.99,
+                    "page_id": 0,
+                    "polygon": [
+                        [
+                            0.815,
+                            0.814
+                        ],
+                        [
+                            0.867,
+                            0.814
+                        ],
+                        [
+                            0.867,
+                            0.833
+                        ],
+                        [
+                            0.815,
+                            0.833
+                        ]
+                    ],
+                    "value": 440
+                },
+                "total_net": {
+                    "confidence": 0.99,
+                    "page_id": 0,
+                    "polygon": [
+                        [
+                            0.815,
+                            0.778
+                        ],
+                        [
+                            0.867,
+                            0.778
+                        ],
+                        [
+                            0.867,
+                            0.798
+                        ],
+                        [
+                            0.815,
+                            0.798
+                        ]
+                    ],
+                    "value": 400
+                },
+                "total_tax": {
+                    "confidence": 0,
+                    "page_id": 0,
+                    "polygon": [],
+                    "value": null
+                }
+            },
+            "processing_time": 0.828,
+            "product": {
+                "features": [
+                    "locale",
+                    "invoice_number",
+                    "po_number",
+                    "reference_numbers",
+                    "date",
+                    "due_date",
+                    "payment_date",
+                    "total_net",
+                    "total_amount",
+                    "total_tax",
+                    "taxes",
+                    "supplier_payment_details",
+                    "supplier_name",
+                    "supplier_company_registrations",
+                    "supplier_address",
+                    "supplier_phone_number",
+                    "supplier_website",
+                    "supplier_email",
+                    "customer_name",
+                    "customer_company_registrations",
+                    "customer_address",
+                    "customer_id",
+                    "shipping_address",
+                    "billing_address",
+                    "document_type",
+                    "document_type_extended",
+                    "subcategory",
+                    "category",
+                    "orientation",
+                    "line_items"
+                ],
+                "name": "mindee/invoices",
+                "type": "standard",
+                "version": "4.11"
+            },
+            "started_at": "2025-06-16T09:26:35.506864"
+        },
+        "n_pages": 1,
+        "name": "1131w-aBb_N6_4CUg.webp"
+    }
+}
