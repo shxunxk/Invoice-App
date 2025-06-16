@@ -6,7 +6,7 @@ const MINDEE_API_KEY = process.env.REACT_APP_MINDEE_API_KEY;
   if (!imageFile) throw new Error("No file provided");
 
   const formData = new FormData();
-  // Mindee expects field name 'document'
+
   formData.append('document', imageFile, imageFile.name || 'invoice.jpg');
 
   try {
