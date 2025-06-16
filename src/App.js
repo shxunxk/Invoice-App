@@ -24,7 +24,6 @@ function App() {
     const summary = Object.entries(data)
       .filter(([key]) => !ignoreKeys.includes(key))
       .map(([key, value]) => {
-        console.log(key, value)
         const displayValue = value?.value ?? null;
         return {
           label: key.split('_').map(w => w[0].toUpperCase() + w.slice(1)).join(' '),
@@ -57,8 +56,6 @@ function App() {
   
       const processedData = await processInvoiceImage(imageFile);
 
-      console.log(processedData)
-
       setInvoiceData(structureData(processedData?.document?.inference?.prediction));
 
       setCurrentPage('invoice')
@@ -69,8 +66,6 @@ function App() {
       setLoading(false);
     }
   };
-
-  console.log(invoiceData)
 
   return (
     <div className="App">
