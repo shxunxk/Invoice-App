@@ -1,70 +1,122 @@
-# Getting Started with Create React App
+# Invoice Processing Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern web application for processing and displaying invoice data extracted from images. This application provides a clean and intuitive interface for viewing invoice details, customer information, and payment summaries.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Invoice Data Extraction**: Process invoice images to extract key information
+- **Comprehensive Summary View**: Display detailed invoice information including:
+  - Invoice Details (number, date, due date, document type)
+  - Customer Information (name, ID, address)
+  - Supplier Information (name, address)
+  - Payment Details (totals, currency, payment date)
+- **Itemized List**: View detailed line items with descriptions, quantities, and prices
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
+- **Modern UI**: Clean and professional interface with intuitive navigation
 
-### `npm start`
+## Technical Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React.js
+- **Styling**: CSS3 with modern features
+- **Data Processing**: Custom invoice data extraction and processing
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v14 or higher)
+- npm (v6 or higher)
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+   ```bash
+   git clone [repository-url]
+   cd invoice-app
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-### `npm run eject`
+The application will be available at `http://localhost:3000`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+invoice-app/
+├── src/
+│   ├── Components/
+│   │   ├── InvoiceTable.js      # Main invoice display component
+│   │   └── InvoiceTable.css     # Styling for invoice display
+│   ├── App.js
+│   └── index.js
+├── public/
+│   └── index.html
+└── package.json
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Upload an invoice image through the application interface
+2. The system will process the image and extract relevant information
+3. View the processed invoice data in a structured format:
+   - Summary section with key invoice details
+   - Itemized list of products/services
+   - Payment summary with totals
 
-## Learn More
+## Data Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The application processes invoice data in the following format:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```javascript
+{
+  summary: [
+    {
+      label: string,
+      value: string | number | object
+    }
+  ],
+  table: [
+    {
+      description: string,
+      quantity: number,
+      total_amount: number,
+      unit_price: number
+    }
+  ],
+  header: string[]
+}
+```
 
-### Code Splitting
+## Styling
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The application uses modern CSS features including:
+- CSS Grid for layout
+- Flexbox for alignment
+- CSS Variables for theming
+- Responsive design patterns
+- Modern box-shadow and border-radius properties
 
-### Analyzing the Bundle Size
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-### Advanced Configuration
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- React.js community for the excellent documentation and support
+- Contributors and maintainers of the project 
