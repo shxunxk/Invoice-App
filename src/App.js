@@ -50,15 +50,20 @@ function App() {
 
   const handleImageUpload = async (imageFile) => {
     try {
-      setLoading(true);
+      console.log('Image uploaded');
+
       setError('');
       setUploadedImage(URL.createObjectURL(imageFile));
-  
+      console.log('Uploaded image');
+
       const processedData = await processInvoiceImage(imageFile);
+      console.log('Processed data', processedData);
+      setLoading(true);
 
       setInvoiceData(structureData(processedData?.document?.inference?.prediction));
 
       setCurrentPage('invoice')
+
     } catch (err) {
       setError('Failed to process invoice image');
       console.error(err);
